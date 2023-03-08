@@ -1,0 +1,61 @@
+/* Container holding the image and the text */
+.display-container {
+    position: relative;
+    text-align: center;
+    color: rgb(169, 104, 80);
+}
+
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scene {
+    display: inline-block;
+    width: 200px;
+    height: 260px;
+    /*   border: 1px solid #CCC; */
+    margin: 8px 0;
+    perspective: 600px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+}
+
+.card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    padding-top: 100px;
+    line-height: 34px;
+    color: rgb(30, 30, 30);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    backface-visibility: hidden;
+}
+
+.card__face--front {
+    background: rgb(226, 226, 226);
+}
+
+.card__face--back {
+    background: rgb(167, 208, 120);
+    transform: rotateY(180deg);
+}

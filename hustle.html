@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/5414/5414130.png" alt="Logo"
+                    class="d-inline-block align-text-top mx-2" style="max-width: 30px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="heart.html">Heart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="health.html">Health</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="hustle.html">Hustle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Cards-->
+    <div class="container-fluid" style="max-width: 900px; margin-top: 40px;">
+        <h1>Hustle</h1>
+        <p>How about your hustle side of life?
+            <br>Reflect how great you've been working today and smile :)
+        </p>
+        <div class="col-auto">
+            <div class="scene scene--card">
+                <div class="card">
+                    <div class="card__face card__face--front">Feel the progress</div>
+                    <div class="card__face card__face--back">done!</div>
+                </div>
+            </div>
+            <div class="scene scene--card">
+                <div class="card">
+                    <div class="card__face card__face--front">Learn something new</div>
+                    <div class="card__face card__face--back">done!</div>
+                </div>
+            </div>
+            <div class="scene scene--card">
+                <div class="card">
+                    <div class="card__face card__face--front">Get feedback from other</div>
+                    <div class="card__face card__face--back">done!</div>
+                </div>
+            </div>
+            <div class="scene scene--card">
+                <div class="card">
+                    <div class="card__face card__face--front">Feel confident</div>
+                    <div class="card__face card__face--back">done!</div>
+                </div>
+            </div>
+            <div class="scene scene--card">
+                <div class="card">
+                    <div class="card__face card__face--front">Feel productive</div>
+                    <div class="card__face card__face--back">done!</div>
+                </div>
+            </div>
+            <div class="scene scene--card">
+                <div class="card">
+                    <div class="card__face card__face--front">Learn from mistakes</div>
+                    <div class="card__face card__face--back">done!</div>
+                </div>
+            </div>
+            <div class="scene scene--card">
+                <div class="card">
+                    <div class="card__face card__face--front">Know what to improve</div>
+                    <div class="card__face card__face--back">done!</div>
+                </div>
+            </div>
+            <div class="scene scene--card">
+                <div class="card">
+                    <div class="card__face card__face--front">Remind myself why doing what I do</div>
+                    <div class="card__face card__face--back">done!</div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 20px; margin-bottom: 150px;">
+            <button type="button" class="btn btn-outline-dark text-center" onclick="document.location='index.html'">I'm
+                a Huge success! Let's summary~</button>
+        </div>
+    </div>
+</body>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+    var cards = document.querySelectorAll('.card');
+
+    [...cards].forEach((card) => {
+        card.addEventListener('click', function () {
+            card.classList.toggle('is-flipped');
+        });
+    });</script>
+
+</html>
